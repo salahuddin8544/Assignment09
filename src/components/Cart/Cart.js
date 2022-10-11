@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import('./Cart.css')
 const Cart = ({quiz,quizHandle}) => {
     const{id,logo,name}= quiz;
     return (
-      <div>
          <div className="col">
           <div className="card h-100">
             <img className='bg-success' src={logo} alt="" />
@@ -13,7 +13,6 @@ const Cart = ({quiz,quizHandle}) => {
               <Link to={`/${id}`} className='btn btn-primary w-100'>Start Quiz</Link>
           </div>
         </div>
-      </div>
 
     );
 };

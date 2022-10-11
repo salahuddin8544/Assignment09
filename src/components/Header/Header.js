@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <nav className='d-flex justify-content-between bg-success text-white nav-bar shadow '>
             <h3>Queezy</h3>
-            <ul>
+            <ul className='navbar'>
                 <div className='nav-icon d-md-none'  onClick={()=> setOpen(!open)}>
                 {
                 open?
@@ -15,7 +15,7 @@ const Header = () => {
                 <Bars3Icon></Bars3Icon>
                   }
                 </div>
-            <div className={`nav-Item d-md-flex`}>
+            <div className={`nav-item d-md-flex ${open?'top-0':'top-[-130px]'}`}>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/statistics'>Statistics</NavLink>
                 <NavLink to='/blog'>Blog</NavLink>
