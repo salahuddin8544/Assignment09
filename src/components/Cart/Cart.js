@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const Cart = ({quiz,quizHandle}) => {
     const{id,logo,name}= quiz;
     return (
       <div>
-         <div class="col">
-          <div class="card h-100">
+         <div className="col">
+          <div className="card h-100">
             <img className='bg-success' src={logo} alt="" />
-            <div class="card-body">
-              <h5 class="card-title">{name}</h5>
+            <div className="card-body">
+              <h5 className="card-title">{name}</h5>
             </div>
-              <button onClick={} className='btn btn-primary w-100'>Start Quiz</button>
+              <Link to={`/${id}`} className='btn btn-primary w-100'>Start Quiz</Link>
           </div>
         </div>
       </div>
