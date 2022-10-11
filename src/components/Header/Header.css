@@ -1,0 +1,11 @@
+.nav-icon{
+    width: 30px;
+}
+.nav-bar a{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    margin-right: 45px;
+}
