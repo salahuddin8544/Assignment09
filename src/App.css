@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+.icon{
+  width: 20px;
+  height: 20px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

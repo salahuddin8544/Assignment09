@@ -5,7 +5,7 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 import {Link} from 'react-router-dom';
 import ('./SingleQuiz.css')
 const SingleQuiz = ({singleQuiz}) => {
-    const {question,id,options,correctAnswer} = singleQuiz;
+    const {question,options,correctAnswer} = singleQuiz;
         const clicked = (option)=>{
             if(option === correctAnswer){
              toast("Correct answer");

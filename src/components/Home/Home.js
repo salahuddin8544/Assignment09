@@ -6,7 +6,6 @@ import('./Home.css')
 const Home = () => {
     const data = useLoaderData();
     const quizs = data.data;
-
     return (
         <div>
             <div className='d-flex title justify-content-around align-item-center bg-primary p-4 text-white'>

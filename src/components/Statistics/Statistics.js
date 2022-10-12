@@ -4,8 +4,6 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Resp
 const Statistics = () => {
     const questions = useLoaderData();
     const data = questions.data;
- 
-    console.log('this is fakedata', data);
     return (
             <BarChart width={500} height={400} data={data}>
           <Bar dataKey="total" fill="#8884d8" />

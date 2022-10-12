@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layout/Main';
@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import Quiz from './components/Quiz/Quiz';
+import Notfoum from './components/NotFound/Notfoum';
 function App() {
   const router = createBrowserRouter([
     {
@@ -18,7 +19,7 @@ function App() {
           element:<Home></Home>
         },
         {
-          path:'/:quizId',
+          path:'/home/:quizId',
           loader:({params})=>{
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
@@ -36,9 +37,10 @@ function App() {
       ]
     },
     {
-      path:'/*',
-      element:<div>Hello</div>
+      path:'*',
+      element: <Notfoum></Notfoum>
     }
+        
   ])
   return (
     <div className="App">

@@ -3,10 +3,10 @@ import { useLoaderData } from 'react-router-dom';
 import SingleQuiz from '../SingleQuiz/SingleQuiz';
 const Quiz = () => {
     const quiz = useLoaderData();
-    const questions = quiz.data.questions;
+    const {questions,name}= quiz.data;
     return (
         <div>
-            <h3>Quiz of {quiz.data.name}</h3>
+            <h3>Quiz of {name}</h3>
            {
             questions.map(singleQuiz=><SingleQuiz
             key={singleQuiz.id}
