@@ -1,3 +1,23 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+
+<nav className='d-flex justify-content-between bg-success text-white nav-bar shadow '>
+            <h3>Queezy</h3>
+            <ul className='navbar'>
+                <div className='nav-icon d-md-none'  onClick={()=> setOpen(!open)}>
+                {
+                open?
+                <XMarkIcon/>:
+                <Bars3Icon></Bars3Icon>
+                  }
+                </div>
+            <div className={`nav-item d-md-flex ${open?'top-0':'top-[-130px]'}`}>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/statistics'>Statistics</NavLink>
+                <NavLink to='/blog'>Blog</NavLink>
+            </div>
+            </ul>
+        </nav>

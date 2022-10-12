@@ -6,9 +6,7 @@ import('./Home.css')
 const Home = () => {
     const data = useLoaderData();
     const quizs = data.data;
-    const quizHandle =(id)=>{
-        console.log(id);
-    }
+
     return (
         <div>
             <div className='d-flex title justify-content-around align-item-center bg-primary p-4 text-white'>
@@ -20,7 +18,6 @@ const Home = () => {
                 quizs.map(quiz=> <Cart
                 key={quiz.id}
                 quiz = {quiz}
-                quizHandle = {quizHandle}
                 ></Cart>)
             }
             {
