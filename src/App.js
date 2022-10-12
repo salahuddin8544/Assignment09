@@ -34,6 +34,10 @@ function App() {
           element:<Blog></Blog>
         }
       ]
+    },
+    {
+      path:'/*',
+      element:<div>Hello</div>
     }
   ])
   return (
